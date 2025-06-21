@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NavBar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: white;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: blue;
+    }
+
+    header div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      height: 60px;
+      background-color: #0f1111;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      padding-right: 200px;
+    }
+
+    input, button {
+      color: #0f1111;
+    }
+
+    button {
+      background-color: #f08804;
+    }
+
+    #logo {
+      color: #f08804;
+    }
+
+    main {
+      background-color: #f0f0f0f4;
+      height: 81.4vh;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+
+    footer {
+      height: 10.6vh;
+      background-color: #0f1111;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="navb">
+      <a id="logo">Amazon</a>
+      <a href="#">Account</a>
+      <a href="#">My Cart</a>
+      <a href="#">Contact</a>
+      <input id="search" type="text" placeholder="search" />
+      <button>Search</button>
+    </div>
+  </header>
+  <main></main>
+  <footer></footer>
+</body>
+</html>
