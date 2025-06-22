@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: rgb(0, 0, 0);
+            margin: 0px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+
+        div {
+
+            align-content: center;
+            margin: 0px;
+            background-color: rgb(25, 24, 24);
+            height: 200px;
+            width: 90px;
+            border-radius: 9px;
+        }
+
+        #red {
+            border-radius: 50px;
+            height: 20%;
+            width: 50%;
+            background-color: red;
+
+
+        }
+
+        #yellow {
+            border-radius: 50px;
+            height: 20%;
+            width: 50%;
+            background-color: yellow;
+
+
+        }
+
+        #gre {
+            border-radius: 50px;
+            height: 20%;
+            width: 50%;
+            background-color: green;
+
+
+        }
+
+        .c {
+            margin: 22%;
+
+        }
+
+        #rod {
+
+            width: 15px;
+            border-radius: 0px;
+            margin-left: 35px;
+        }
+
+        @keyframes blinkRed {
+
+            0%,
+            100% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: darkred;
+            }
+        }
+         @keyframes blinkyellow {
+
+            0%,
+            100% {
+                background-color: rgb(230, 255, 8);
+            }
+
+            50% {
+                background-color: rgba(251, 255, 8, 0.706);
+            }
+        }
+
+        #red {
+            animation: blinkRed 1s infinite;
+        }
+          #yellow {
+            animation: blinkyellow 1s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <div id="o" class="t">
+            <div id="red" class="c"></div>
+            <div id="yellow" class="c"></div>
+            <div id="gre" class="c"></div>
+            <div id="rod" class="t"></div>
+        </div>
+        
+
+
+</body>
+
+</html>
