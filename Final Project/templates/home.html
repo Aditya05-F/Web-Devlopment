@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="booking-bar">
+    <div class="field">
+        <label for="checkin">Check-In</label>
+        <input type="date" id="checkin">
+    </div>
+
+    <div class="field">
+        <label for="checkout">Check-Out</label>
+        <input type="date" id="checkout">
+    </div>
+
+    <div class="field">
+        <label for="guests">Guests</label>
+        <select id="guests">
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4+ Guests</option>
+        </select>
+    </div>
+
+    <button class="search-btn">Search</button>
+</div>
+{% endblock %}

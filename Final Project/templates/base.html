@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Hotel{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="floating-box">Hotel Name</div>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-contact">
+                <a href="/" class="nav-o">Home</a>
+                <a href="/about" class="nav-o">About Us</a>
+                <a href="/contact" class="nav-o">Contact</a>
+                <a href="#" id="log-in" class="nav-o">Login</a>
+            </div>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+</body>
+</html>
